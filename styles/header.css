@@ -22,7 +22,6 @@ header {
   color: #fff;
   letter-spacing: 2px;
   font-weight: 600;
-  text-decoration: none;
   transition: 0.5s;
 }
 
@@ -80,6 +79,7 @@ header {
   color: #fff;
   font-weight: 300;
   margin: 10px 0 20px;
+  text-align: justify;
 }
 
 .header-download-links {
@@ -94,6 +94,7 @@ header {
   transition: 0.5s;
   background: var(--secondary);
   letter-spacing: 2px;
+  border-radius: 2px;
 }
 
 .header-download-links:last-of-type {
@@ -169,7 +170,43 @@ header {
   filter: invert(0);
 }
 
+.header-menu-root {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 300px;
+}
+
+.header-menu li a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #08381b;
+  text-decoration: none;
+  font-size: 24px;
+  transition: 0.2s ease-in-out;
+  margin: 5px 0;
+}
+
+.header-menu li a:hover {
+  letter-spacing: 6px;
+  background: #fff;
+  color: #161a23;
+}
+
 /* on toggle btn atived */
+.header_active .header-menu-root {
+  visibility: visible;
+  opacity: 1;
+}
 .header_active .header-socials,
 .header_active .header-content-box,
 .header_active .logo {
@@ -178,12 +215,14 @@ header {
 }
 
 @media screen and (max-width: 991.98px) {
-  header {
-    justify-content: flex-start;
+  /* header-content (container) */
+  header .container:nth-of-type(2) {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
   }
 
   .header-content {
-    padding-top: 100px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -200,5 +239,40 @@ header {
     position: static;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .header-menu li a {
+    color: #fff;
+  }
+
+  /* on toggle btn atived */
+  .header_active .header-menu-root {
+    top: 90px;
+    transform: translateY(0);
+    background: #21283a;
+    height: calc(100% - 90px);
+    z-index: 1200;
+  }
+
+  .header_active .header-socials,
+  .header_active .header-content-box,
+  .header_active .logo {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header-content-box h2 {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .header-content-box h2 {
+    font-size: 32px;
+  }
+
+  .header-content-box h3 {
+    font-size: 18px;
   }
 }

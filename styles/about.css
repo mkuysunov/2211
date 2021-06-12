@@ -1,0 +1,34 @@
+.about-picture img {
+  max-width: 400px;
+}
+
+.about-description h4 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.about-description h4 span {
+  color: var(--darker_secondary);
+}
+
+.about-description p {
+  line-height: 25px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 991.98px) {
+  .about-picture {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .about-picture {
+    text-align: center;
+  }
+
+  .about-picture img {
+    max-width: 100%;
+  }
+}

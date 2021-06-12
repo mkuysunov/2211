@@ -1,0 +1,21 @@
+footer {
+  padding: 30px 15px;
+  background: #121113;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.copyright span:first-of-type {
+  color: var(--darker_secondary);
+}
+
+@media screen and (max-width: 575.98px) {
+  .copyright {
+    font-size: 14px;
+  }
+}

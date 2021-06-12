@@ -1,6 +1,7 @@
 :root {
   --primary: #31f572;
   --secondary: #de195f;
+  --darker_secondary: #ed143d;
 }
 
 * {
@@ -10,6 +11,17 @@
   box-sizing: border-box;
 }
 
+section {
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
 .root {
   display: flex;
   flex-direction: column;
@@ -17,4 +29,66 @@
 
 .outline {
   outline: 1px solid #f00;
+}
+
+.secondary-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--darker_secondary);
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+.title-description {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.title-description span {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  font-size: 18px;
+  color: crimson;
+  font-weight: 600;
+}
+
+.title-description span::before,
+.title-description span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3px;
+  width: 30px;
+  background: #000;
+  right: 100%;
+  border-radius: 2px;
+}
+
+.title-description span::after {
+  left: 100%;
+}
+
+.title-description-white span::before,
+.title-description-white span::after {
+  background: #fff;
+}
+
+@media screen and (max-width: 991.98px) {
+  .title,
+  .title-description {
+    text-align: left;
+  }
+  .title-description {
+    padding-left: 40px;
+  }
 }

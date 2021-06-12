@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Muhammad Kuysunov</title>
+  <meta name="author" content="Muhammad_Kuysunov">
 
   <link rel="stylesheet" href="./styles//bootstrap-grid.min.css">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/services.css">
+  <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -17,27 +22,25 @@
     <header>
       <div class="container">
         <div class="app-bar ">
-          <a href="#" class="logo">Porfolio</a>
+          <span class="logo">Porfolio.</span>
           <div class="toggle-btn"></div>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container ">
         <div class="header-content ">
            <div class="header-content-box ">
              <h4>Hello,</h4>
              <h2>I'm Muhammad</h2>
-             <h3>Professional Web Designer</h3>
+             <h3>Profisional Web Designer</h3>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores a voluptate commodi ab ipsam mollitia soluta quae esse, iste voluptatibus eos deleniti perferendis doloremque culpa possimus ipsum numquam, modi cupiditate.</p>
-             <a href="#" class="header-download-links">Hire Me</a>
+             <a href="#" class="header-download-links">Here Me</a>
              <a href="#" class="header-download-links">Download CV</a>
            </div>
-           
           <div class="my-picture ">
             <img src="./assets/tmp-men.png" alt="Hi, it's me )">
           </div>
-
-          <ul class="header-socials ">
+          <ul class="header-socials">
             <li><a href="#"><img src="./assets/facebook.svg" alt="facebook"></a></li>
             <li><a href="#"><img src="./assets/twitter.svg" alt="twitter"></a></li>
             <li><a href="#"><img src="./assets/instagram.svg" alt="instagram"></a></li>
@@ -45,22 +48,143 @@
         </div>
       </div>
 
-      <!-- <ul class="header-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Servises</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul> -->
-
-      <!-- <img src="./assets/element-1.png" alt="X" class="header-elements" data-speed="8">
-      <img src="./assets/element-2.png" alt="X" class="header-elements" data-speed="10">
-      <img src="./assets/element-3.png" alt="X" class="header-elements" data-speed="-10">
-      <img src="./assets/element-4.png" alt="X" class="header-elements" data-speed="-6"> -->
+      <div class="header-menu-root">
+        <div class="container">
+          <ul class="header-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servises</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-  </div>
 
+    <main>
+      <!-- about -->
+      <section class="about-root">
+        <div class="container">
+          <h2 class="title ">About me</h2>
+          <div class="title-description">
+            <span>Who i am</span>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="about-picture">
+                <img src="./assets/400x400-light.gif" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-description">
+                <h4>I'm Prokash and I'm a <span>Developer</span></h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat in, ipsa sapiente fuga, similique laborum molestiae dolorem voluptate dolor id ad quam qui esse perferendis aliquid blanditiis sed. Ipsa fuga doloremque earum porro eaque. Quas nihil error at impedit. Provident dolore facere aliquid eos explicabo eius enim cumque fugiat, rem blanditiis. Dolores soluta aliquid praesentium mollitia debitis nisi at dolor.</p>
+                <a href="#" class="secondary-btn">Dowload CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="services-root">
+        <div class="container">
+          <h2 class="title">My services</h2>
+          <div class="title-description title-description-white">
+            <span>What i provide</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="services-card">
+                <div class="services-card-img">
+                  <img src="./assets/coding.svg" alt="Web design">
+                </div>
+                <h5>Web design</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus a, vel nam corporis accusamus deleniti!</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="services-card">
+                <div class="services-card-img">
+                  <img src="./assets/coding.svg" alt="Web design">
+                </div>
+                <h5>Web design</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus a, vel nam corporis accusamus deleniti!</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="services-card">
+                <div class="services-card-img">
+                  <img src="./assets/coding.svg" alt="Web design">
+                </div>
+                <h5>Web design</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus a, vel nam corporis accusamus deleniti!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills-root">
+        <div class="container">
+          <h2 class="title">My skills</h2>
+          <div class="title-description">
+            <span>What i know</span>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="skills-description">
+                <h4>My creative skills & experiences.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat in, ipsa sapiente fuga, similique laborum molestiae dolorem voluptate dolor id ad quam qui esse perferendis aliquid blanditiis sed. Ipsa fuga doloremque earum porro eaque. Quas nihil error at impedit. Provident dolore facere aliquid eos explicabo eius enim cumque fugiat, rem blanditiis. Dolores soluta aliquid praesentium mollitia debitis nisi at dolor.</p>
+                <a href="#" class="secondary-btn">Read more</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="skills-progress skills-progress-90">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skills-progress skills-progress-80">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="skills-progress skills-progress-70">
+                <span>Java Script</span>
+                <span>70%</span>
+              </div>
+              <div class="skills-progress skills-progress-80">
+                <span>React</span>
+                <span>80%</span>
+              </div>
+              <div class="skills-progress skills-progress-70">
+                <span>React Redux</span>
+                <span>70%</span>
+              </div>
+              <div class="skills-progress skills-progress-80">
+                <span>Material UI (React)</span>
+                <span>80%</span>
+              </div>
+              <div class="skills-progress skills-progress-70">
+                <span>Bootstrap 4 +</span>
+                <span>70%</span>
+              </div>
+              <div class="skills-progress skills-progress-50">
+                <span>LESS</span>
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">Created By <span>Muhammad Kuysunov</span> | &copy; <span class="copyright-current-date"></span> All right reserved</div>
+    </footer>
+  </div>
   <script src="./js/index.js"></script>
 </body>
 </html>

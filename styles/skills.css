@@ -1,0 +1,76 @@
+.skills-description {
+  padding-bottom: 40px;
+}
+
+.skills-description h4 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.skills-description p {
+  line-height: 25px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+.skills-progress {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #d4d2d4;
+}
+
+.skills-progress span {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.skills-progress-10::before,
+.skills-progress-20::before,
+.skills-progress-30::before,
+.skills-progress-40::before,
+.skills-progress-50::before,
+.skills-progress-60::before,
+.skills-progress-70::before,
+.skills-progress-80::before,
+.skills-progress-90::before,
+.skills-progress::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--darker_secondary);
+}
+
+.skills-progress-10::before {
+  width: 10%;
+}
+.skills-progress-20::before {
+  width: 20%;
+}
+.skills-progress-30::before {
+  width: 30%;
+}
+.skills-progress-40::before {
+  width: 40%;
+}
+.skills-progress-50::before {
+  width: 50%;
+}
+.skills-progress-60::before {
+  width: 60%;
+}
+.skills-progress-70::before {
+  width: 70%;
+}
+.skills-progress-80::before {
+  width: 80%;
+}
+.skills-progress-90::before {
+  width: 90%;
+}
